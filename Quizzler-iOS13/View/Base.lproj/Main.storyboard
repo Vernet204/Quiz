@@ -25,8 +25,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fal-oS-tEg">
                                 <rect key="frame" x="20" y="48" width="374" height="814"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iht-SB-eha">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="86"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhT-Ml-fbD">
+                                        <rect key="frame" x="0.0" y="96" width="374" height="86.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" red="0.99272017050000005" green="0.99272017050000005" blue="0.99272017050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="614"/>
+                                        <rect key="frame" x="0.0" y="192.5" width="374" height="421.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -85,9 +97,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backView" destination="8bC-Xf-vdC" id="sBN-o5-Hu4"/>
                         <outlet property="falseButton" destination="tbn-vQ-GyC" id="48N-pb-a9q"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="jwp-HI-Bes"/>
+                        <outlet property="questionCounterLabel" destination="Iht-SB-eha" id="OMF-Qc-e0A"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="SRD-gd-6Mp"/>
+                        <outlet property="questionNumberLabel" destination="AhT-Ml-fbD" id="bNK-h0-IWj"/>
                         <outlet property="trueButton" destination="oVw-Hl-IRe" id="BPP-XP-Pfg"/>
                     </connections>
                 </viewController>
